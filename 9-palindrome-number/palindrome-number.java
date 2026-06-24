@@ -4,7 +4,7 @@ class Solution {
         if (x < 0) return false;
 
         int original = x;
-        int reversed = 0;
+        int reversed = 0; 
 
         while (x != 0) {
             int digit = x % 10;
