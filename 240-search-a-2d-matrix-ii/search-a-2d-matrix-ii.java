@@ -7,23 +7,23 @@ class Solution {
         int m = matrix.length;
         int n = matrix[0].length;
         
-        // Start at the top-right corner
+      
         int row = 0;
         int col = n - 1;
         
-        // Step through the matrix without going out of bounds
+       
         while (row < m && col >= 0) {
             int current = matrix[row][col];
             
             if (current == target) {
                 return true; 
             } else if (current > target) {
-                col--; // Target is smaller, eliminate this column
+                col--; 
             } else {
-                row++; // Target is larger, eliminate this row
+                row++;
             }
         }
         
-        return false; // Target not found
+        return false; 
     }
 }
